@@ -1,0 +1,170 @@
+@font-face {
+    font-family: heebo;
+    src: url(./fonts/heebo.ttf);
+}
+@font-face {
+    font-family: fff;
+    src: url(./fonts/fff.ttf);
+}
+
+body {
+    overflow: hidden;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.drawerMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(40, 40, 50);
+    border-right: 0.4vw white solid;
+    z-index: 100;
+    transition: 500ms ease;
+    user-select: none;
+}
+.drawerMenu .menubutton {
+    position: absolute;
+    right: 0.5vw;
+    top: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.drawerMenu img {
+    position: absolute;
+    top: 0;
+    right: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+}
+.drawerMenu .siteicon {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 1vw;
+}
+.drawerMenu .sitename {
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+    color: white;
+    font-family: heebo;
+    font-size: 3.5vh;
+}
+.drawerMenu .drawerButton {
+    width: 15vw;
+    height: 5vw;
+    background: transparent;
+    border: 0.2vw transparent solid;
+    border-radius: 0.5vw;
+    color: white;
+    font-family: heebo;
+    font-size: 3vh;
+    transition: 200ms ease;
+}
+.drawerMenu .drawerButton:hover {
+    background: linear-gradient(90deg, rgba(40,40,50,1) 0%, rgba(70,70,90,1) 100%);
+    border-radius: 1vw;
+    border: 0.2vw white solid;
+}
+.drawerMenu .homeButton {
+    position: absolute;
+    top: 20vw;
+    right: 0.5vw;
+    text-align: left;
+}
+.drawerMenu .homeButton img {
+    position: absolute;
+    top: -0.5vw;
+    right: 0vw;
+    width: 5vw;
+    height: 5vw;
+}
+.drawerMenu .rulesButton {
+    position: absolute;
+    top: 26vw;
+    right: 0.5vw;
+    text-align: left;
+}
+.drawerMenu .rulesButton img {
+    position: absolute;
+    top: 0.2vw;
+    width: 4vw;
+    height: 4vw;
+}
+.drawerMenu .discordLink {
+    position: absolute;
+    top: 32vw;
+    right: 0.5vw;
+    text-align: left;
+}
+.drawerMenu .discordLink img {
+    position: absolute;
+    top: 0.2vw;
+    width: 4vw;
+    height: 4.5vw;
+}
+.drawerMenu .authors {
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    color: grey;
+    font-family: fff;
+    font-size: 1vh;
+}
+.drawerMenu .authors a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 8vw;
+    width: 92vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+#discord_widget {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 25vw;
+    height: calc(100vh - 2vw);
+}
+
+.serverInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1vw;
+    color: white;
+    background: rgba(40,40,50,0.8);
+    border: 0.1vw rgba(255, 255, 255, 0.8) solid;
+    font-family: heebo;
+    font-size: 3vh;
+}
+
+.serverRules {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1vw;
+    color: white;
+    background: rgba(40,40,50,0.8);
+    border: 0.1vw rgba(255, 255, 255, 0.8) solid;
+    font-family: heebo;
+    font-size: 2vh;
+    display: box;
+    line-break: strict;
+}
