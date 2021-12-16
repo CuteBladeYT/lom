@@ -1,2 +1,0 @@
-# lom
-lost of memories
